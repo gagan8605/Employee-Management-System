@@ -8,20 +8,6 @@ Unique Employee ID: Each employee record has a system-generated unique ID.
 Employee Details: Includes fields like name, age, position, department, salary, and status (active/inactive).
 Authorization: Only authenticated users can access and modify employee data.
 Responsive Design: Easy-to-navigate UI for efficient data management.
-## Project Structure
-employee-management-system/
-├── public/
-│   ├── index.html            # Main GUI
-│   ├── login.html            # Login page
-│   ├── signup.html           # Signup page
-│   ├── script.js             # Main JavaScript file for index.html
-│   └── style.css             # Shared CSS file
-├── models/
-│   ├── employee.js           # Employee model
-│   └── user.js               # User model (for login/signup)
-├── server.js                 # Main server file
-├── package.json              # Node.js dependencies
-└── .env                      # Environment variables (JWT secret)
 
 Ensure you have the following installed:
 
@@ -30,15 +16,10 @@ MongoDB: NoSQL database for storing employee and user data.
 
 Installation
 Clone the repository:
-
-bash
-git clone https://github.com/your-username/employee-management-system.git
-cd employee-management-system
+https://github.com/gagan8605/Employee-Management-System.git
 
 Install dependencies:
-
 bash
-Copy code
 npm install
 Configure environment variables:
 
@@ -59,7 +40,7 @@ Open your browser and navigate to:
 http://localhost:3000
 ### API Endpoints
 ### Authentication
-POST /api/signup: Registers a new user with a username and password.
+"POST /api/signup: Registers a new user with a username and password."
 POST /api/login: Authenticates the user, returning a JWT token on success.
 Employee Management (Protected Routes)
 GET /api/employees: Retrieves a list of all employees.
